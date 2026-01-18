@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Top Tracks</title>
+    <link rel="stylesheet" href="wrapped.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <div class="wrapped-container">
+        <header>
+            <h2 class="animate-slide-down">Your Top Songs</h2>
+            <p class="animate-slide-down delay-1">You couldn't stop listening to these.</p>
+        </header>
+
+        <div id="tracks-list" class="tracks-grid">
+            <div class="loading">Analyzing your year...</div>
+        </div>
+
+        <button onclick="window.location.href='index.html'" class="back-btn animate-fade-in delay-3">Back</button>
+    </div>
+
+    <script src="wrapped.js"></script>
+</body>
+</html>
