@@ -1,0 +1,80 @@
+:root {
+    --neon-green: #0aff60;
+    --font-main: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: var(--font-main);
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(30px) opacity(0.4);
+    z-index: -1;
+    transition: background-image 1s ease;
+}
+
+.artist-reveal h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+#artist-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 50px rgba(10, 255, 96, 0.4);
+    border: 4px solid var(--neon-green);
+    margin-bottom: 20px;
+}
+
+.stats { margin-top: 2rem; font-size: 1.2rem; }
+.highlight { color: var(--neon-green); font-weight: bold; }
+
+.badge {
+    margin-top: 1rem;
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.percent { color: #f72585; font-weight: 900; font-size: 1.3rem; }
+
+.home-btn {
+    display: inline-block;
+    margin-top: 3rem;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+.home-btn:hover { color: white; border-color: white; }
+
+/* Animations */
+.fade-in { opacity: 0; animation: fade 1s forwards 0.5s; }
+.zoom-in { opacity: 0; transform: scale(0.8); animation: zoom 0.8s forwards 1s; }
+.slide-up { opacity: 0; transform: translateY(20px); animation: slide 0.8s forwards 1.5s; }
+.fade-in-delay { opacity: 0; animation: fade 1s forwards 2.5s; }
+
+@keyframes fade { to { opacity: 1; } }
+@keyframes zoom { to { opacity: 1; transform: scale(1); } }
+@keyframes slide { to { opacity: 1; transform: translateY(0); } }

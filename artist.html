@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Artist</title>
+    <link rel="stylesheet" href="artist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="background-image" id="bg-img"></div>
+    <div class="overlay"></div>
+
+    <main class="artist-reveal">
+        <p class="fade-in">The artist that defined your 2026</p>
+        
+        <div class="artist-card zoom-in">
+            <img id="artist-img" src="" alt="Top Artist">
+            <h1 id="artist-name">Loading...</h1>
+        </div>
+
+        <div class="stats slide-up">
+            <p>You listened to them <span id="play-count" class="highlight">0</span> times.</p>
+            <div class="badge">
+                You are in the top <span class="percent">1%</span> of listeners.
+            </div>
+        </div>
+
+        <a href="home.html" class="home-btn fade-in-delay">Back to Home</a>
+    </main>
+
+    <script src="artist.js"></script>
+</body>
+</html>
