@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Future</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <h2 class="logo">Spotify <span class="neon-dot">.</span></h2>
+            <ul>
+                <li class="active">🏠 Home</li>
+                <li>🔍 Search</li>
+                <li>📚 Library</li>
+            </ul>
+            
+            <div class="wrapped-promo">
+                <p>Your year is ready.</p>
+                <a href="wrapped.html" class="wrapped-btn">View Wrapped 2026</a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1>Good Evening</h1>
+                <div class="user-profile">👤 Carolus</div>
+            </header>
+
+            <h3 class="section-title">Trending Now</h3>
+            
+            <div id="songs-grid" class="songs-grid">
+                <div class="loading">Loading library...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
